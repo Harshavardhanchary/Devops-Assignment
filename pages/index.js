@@ -55,7 +55,7 @@ export default function Home() {
       <main className={styles.container}>
         <header className={styles.header}>
           <h1 className={styles.name}>Harsha Vardhan</h1>
-          <p className={styles.title}>DevOps Engineer</p>
+          <p className={styles.title}>DevOps/Cloud Engineer</p>
           <p className={styles.bio}>
             Aspiring DevOps engineer with hands-on experience in cloud platforms,
             CI/CD pipelines, and automation. Passionate about building scalable
