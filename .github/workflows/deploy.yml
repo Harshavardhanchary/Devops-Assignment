@@ -32,7 +32,7 @@ jobs:
       - name: Update k8s/deploy.yaml with new image tag
         run: |
           echo "Updating k8s/deploy.yaml with image $IMAGE_NAME"
-          sed -i "s#ghcr.io/harshavardhanchary/Devops-Assignment:.*#$IMAGE_NAME#g" k8s/deploy.yaml
+          sed -i "s#image: ghcr.io/harshavardhanchary/devops-assignment:.*#image: $IMAGE_NAME#g" k8s/deploy.yaml
 
       - name: Commit updated Kubernetes manifest
         run: |
