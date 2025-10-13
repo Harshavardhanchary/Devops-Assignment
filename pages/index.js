@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Harsha Vardhan | DevOps Engineer</title>
+        <title>Harsha Vardhan | DevOps/Cloud Engineer</title>
       </Head>
 
       <button
