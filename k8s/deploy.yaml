@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: nextjs-nginx
-          image: ghcr.io/harshavardhanchary/devops-assignment:10
+          image: ghcr.io/harshavardhanchary/devops-assignment:11
           ports:
             - containerPort: 3000
           readinessProbe:
