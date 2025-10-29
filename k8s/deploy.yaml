@@ -16,18 +16,5 @@ spec:
         - name: nextjs-nginx
           image: ghcr.io/harshavardhanchary/devops-assignment:13
           ports:
-            - containerPort: 3000
-          readinessProbe:
-            httpGet:
-              path: /
-              port: 80
-            initialDelaySeconds: 5
-            periodSeconds: 10
-          livenessProbe:
-            httpGet:
-              path: /
-              port: 80
-            initialDelaySeconds: 10
-            periodSeconds: 20
-
+            - containerPort: 80
 
