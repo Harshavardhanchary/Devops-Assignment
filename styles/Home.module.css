@@ -4,7 +4,6 @@
   padding: 2rem;
   font-family: 'Inter', sans-serif;
 }
-
 .themeToggle {
   position: fixed;
   top: 2rem;
@@ -15,30 +14,31 @@
   border: none;
   z-index: 1000;
 }
-
+.light .themeToggle {
+  color: #1a1a1a;
+}
+.dark .themeToggle {
+  color: #e0e0e0;
+}
 .header {
   text-align: center;
   margin-bottom: 3rem;
 }
-
 .name {
   font-size: 3rem;
   color: #0070f3;
 }
-
 .title {
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 1rem;
 }
-
 .bio {
   font-size: 1rem;
   color: #666;
   max-width: 600px;
   margin: 0 auto;
 }
-
 .links {
   display: flex;
   justify-content: center;
@@ -46,7 +46,6 @@
   flex-wrap: wrap;
   margin-bottom: 3rem;
 }
-
 .link {
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -55,60 +54,49 @@
   border-radius: 6px;
   transition: all 0.2s ease;
 }
-
 .link:hover {
   background: #0070f3;
   color: #fff;
 }
-
 .projects {
   margin-top: 3rem;
 }
-
 .sectionTitle {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 2rem;
   color: #0070f3;
 }
-
 .projectGrid {
   display: grid;
   gap: 2rem;
 }
-
 .project {
   padding: 1.5rem;
   border: 1px solid #ccc;
   border-radius: 10px;
   transition: all 0.2s ease;
 }
-
 .project:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
-
 .project h3 a {
   text-decoration: none;
   color: #0070f3;
 }
-
 .project h3 a:hover {
   text-decoration: underline;
 }
-
 .project p {
   color: #555;
 }
-
 .techStack {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
   margin-top: 0.5rem;
 }
-
 .tech {
   background: #f0f0f0;
   color: #0070f3;
@@ -116,28 +104,74 @@
   border-radius: 4px;
   font-size: 0.8rem;
 }
-
 .light {
   background: #fff;
   color: #1a1a1a;
 }
-
 .light .link {
   border-color: #1a1a1a;
   color: #1a1a1a;
 }
-
 .light .link:hover {
   background: #1a1a1a;
   color: #fff;
 }
-
 .light .project {
   background: #fff;
   border-color: #ccc;
 }
-
 .light .project:hover {
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
-
+.light .name,
+.light .sectionTitle,
+.light .project h3 a {
+  color: #0070f3;
+}
+.light .title {
+  color: #555;
+}
+.light .bio,
+.light .project p {
+  color: #666;
+}
+.light .tech {
+  background: #f0f0f0;
+  color: #0070f3;
+}
+.dark {
+  background: #1a1a1a;
+  color: #e0e0e0;
+}
+.dark .name,
+.dark .sectionTitle,
+.dark .project h3 a {
+  color: #63b3ed;
+}
+.dark .title {
+  color: #a0a0a0;
+}
+.dark .bio,
+.dark .project p {
+  color: #b0b0b0;
+}
+.dark .link {
+  border-color: #63b3ed;
+  color: #63b3ed;
+}
+.dark .link:hover {
+  background: #63b3ed;
+  color: #1a1a1a;
+}
+.dark .project {
+  background: #2a2a2a;
+  border-color: #404040;
+  color: #e0e0e0;
+}
+.dark .project:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+.dark .tech {
+  background: #404040;
+  color: #63b3ed;
+}
